@@ -104,6 +104,7 @@ export function CarRepairLanding() {
               <li>
                 <Link
                   href="#home"
+                  onClick={() => setIsMenuOpen(false)}
                   className="block py-2 px-3 text-yellow-400 md:p-0 hover:text-white"
                 >
                   Home
@@ -112,6 +113,7 @@ export function CarRepairLanding() {
               <li>
                 <Link
                   href="#about"
+                  onClick={() => setIsMenuOpen(false)}
                   className="block py-2 px-3 text-white md:p-0 hover:text-gray-300"
                 >
                   About Us
@@ -120,6 +122,7 @@ export function CarRepairLanding() {
               <li>
                 <Link
                   href="#services"
+                  onClick={() => setIsMenuOpen(false)}
                   className="block py-2 px-3 text-white md:p-0 hover:text-gray-300"
                 >
                   Services
@@ -128,6 +131,7 @@ export function CarRepairLanding() {
               <li>
                 <Link
                   href="#contact"
+                  onClick={() => setIsMenuOpen(false)}
                   className="block py-2 px-3 text-white md:p-0 hover:text-gray-300"
                 >
                   Contact
