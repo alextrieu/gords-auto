@@ -100,12 +100,12 @@ export function CarRepairLanding() {
             } w-full md:flex md:w-auto md:order-1 transition-colors duration-300`}
             id="navbar-sticky"
           >
-            <ul className="flex flex-col md:flex-row md:space-x-8 font-medium p-4 md:p-0 mt-4 rounded-lg md:mt-0 md:border-0 rtl:space-x-reverse">
+            <ul className="flex flex-col md:flex-row md:space-x-8 font-medium md:p-0 mt-4 rounded-lg md:mt-0 md:border-0 rtl:space-x-reverse">
               <li>
                 <Link
                   href="#home"
                   onClick={() => setIsMenuOpen(false)}
-                  className="block py-2 px-3 text-yellow-400 md:p-0 hover:text-white"
+                  className="block py-2 pr-3 md:px-3 text-yellow-400 md:p-0 hover:text-white"
                 >
                   Home
                 </Link>
@@ -114,7 +114,7 @@ export function CarRepairLanding() {
                 <Link
                   href="#about"
                   onClick={() => setIsMenuOpen(false)}
-                  className="block py-2 px-3 text-white md:p-0 hover:text-gray-300"
+                  className="block py-2 pr-3 md:px-3 text-white md:p-0 hover:text-gray-300"
                 >
                   About Us
                 </Link>
@@ -123,7 +123,7 @@ export function CarRepairLanding() {
                 <Link
                   href="#services"
                   onClick={() => setIsMenuOpen(false)}
-                  className="block py-2 px-3 text-white md:p-0 hover:text-gray-300"
+                  className="block py-2 pr-3 md:px-3 text-white md:p-0 hover:text-gray-300"
                 >
                   Services
                 </Link>
@@ -132,7 +132,7 @@ export function CarRepairLanding() {
                 <Link
                   href="#contact"
                   onClick={() => setIsMenuOpen(false)}
-                  className="block py-2 px-3 text-white md:p-0 hover:text-gray-300"
+                  className="block py-2 pr-3 md:px-3 text-white md:p-0 hover:text-gray-300"
                 >
                   Contact
                 </Link>
