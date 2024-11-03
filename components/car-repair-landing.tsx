@@ -29,12 +29,13 @@ export function CarRepairLanding() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50); // Change to true when scrolled 50px
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Navigation Bar */}
@@ -52,7 +53,7 @@ export function CarRepairLanding() {
           >
             <span className="self-center lg:text-2xl font-semibold whitespace-nowrap text-white flex items-center">
               <span className="bg-red-700 text-white font-bold px-2 py-1 rounded-md mr-2">
-                GORD'S
+                GORD&apos;S
               </span>
               AUTO REPAIR
             </span>
@@ -153,10 +154,10 @@ export function CarRepairLanding() {
             Expert Car Care, Right When You Need It
           </h1>
           <p className="text-lg mb-8">
-            At Gord's Auto Repair, we provide comprehensive car maintenance and
-            repair services to keep your vehicle running smoothly and safely.
-            Whether you need routine oil changes, brake service, or complex
-            engine repairs, our certified mechanics are here to help.
+            At Gord&apos;s Auto Repair, we provide comprehensive car maintenance
+            and repair services to keep your vehicle running smoothly and
+            safely. Whether you need routine oil changes, brake service, or
+            complex engine repairs, our certified mechanics are here to help.
           </p>
           <div className="flex space-x-4 justify-center">
             <a
@@ -165,12 +166,6 @@ export function CarRepairLanding() {
             >
               Schedule an Appointment
             </a>
-            {/* <a
-              href="#contact"
-              className="px-6 py-3 border-2 border-yellow-400 text-white font-semibold rounded-lg hover:bg-yellow-500 hover:text-gray-900"
-            >
-              Contact Our Team
-            </a> */}
           </div>
         </div>
       </section>
@@ -200,13 +195,13 @@ export function CarRepairLanding() {
             </h2>
 
             <p className="text-neutral-500 dark:text-neutral-400">
-              With years of experience and a commitment to excellence, Gord's
-              Auto Repair is your go-to choice for reliable and high-quality car
-              care. Our skilled mechanics are trained to handle everything from
-              routine maintenance to complex repairs, ensuring your vehicle is
-              in safe hands. We use the latest tools and technology to diagnose
-              and fix issues accurately and efficiently, helping you get back on
-              the road with confidence.
+              With years of experience and a commitment to excellence,
+              Gord&apos;s Auto Repair is your go-to choice for reliable and
+              high-quality car care. Our skilled mechanics are trained to handle
+              everything from routine maintenance to complex repairs, ensuring
+              your vehicle is in safe hands. We use the latest tools and
+              technology to diagnose and fix issues accurately and efficiently,
+              helping you get back on the road with confidence.
             </p>
             <Button className="bg-yellow-400 text-black hover:bg-yellow-500 mx-auto md:mx-0">
               Learn More
@@ -287,63 +282,6 @@ export function CarRepairLanding() {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      {/* <section className="py-16 container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">
-          Why Choose Gord's Auto Repair?
-        </h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              title: "Transparent Estimates",
-              description:
-                "Receive clear, upfront estimates for all repairs with no hidden costs.",
-              icon: Shield,
-            },
-            {
-              title: "Certified Technicians",
-              description:
-                "Trust our team of certified and experienced mechanics for quality service.",
-              icon: Shield,
-            },
-            {
-              title: "Customer Satisfaction Guarantee",
-              description:
-                "We stand by our work with a 100% satisfaction guarantee.",
-              icon: Check,
-            },
-            {
-              title: "Reliable Repairs",
-              description:
-                "Get repairs done right the first time with our thorough diagnostics.",
-              icon: Wrench,
-            },
-            {
-              title: "State-of-the-Art Equipment",
-              description:
-                "We use advanced tools and technology to provide precise repairs.",
-              icon: Settings,
-            },
-            {
-              title: "Quick Turnaround",
-              description:
-                "Efficient service to get you back on the road as soon as possible.",
-              icon: Clock,
-            },
-          ].map((feature, index) => (
-            <Card key={index} className="text-center">
-              <CardContent className="p-6 space-y-4">
-                <feature.icon className="w-12 h-12 mx-auto text-yellow-400" />
-                <h3 className="text-xl font-semibold">{feature.title}</h3>
-                <p className="text-neutral-500 dark:text-neutral-400">
-                  {feature.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section> */}
-
       {/* Team Section */}
       <section id="team" className="py-16">
         <div className="container mx-auto px-4">
@@ -387,7 +325,7 @@ export function CarRepairLanding() {
               {
                 name: "Alice T.",
                 review:
-                  "Gord's Auto Repair saved me in a pinch! They were fast, professional, and my car runs better than ever. Highly recommend!",
+                  "Gord&apos;s Auto Repair saved me in a pinch! They were fast, professional, and my car runs better than ever. Highly recommend!",
                 rating: 5,
                 image: "/selfie.png",
               },
@@ -426,7 +364,7 @@ export function CarRepairLanding() {
                     </div>
                   </div>
                   <p className="text-neutral-500 dark:text-neutral-400">
-                    "{testimonial.review}"
+                    &quot;{testimonial.review}&quot;
                   </p>
                 </CardContent>
               </Card>
@@ -444,7 +382,7 @@ export function CarRepairLanding() {
                 Schedule an Appointment
               </h2>
               <p className="text-gray-400 mb-8">
-                Gord’s Auto Repair is here to serve you with quality and
+                Gord&apos;s Auto Repair is here to serve you with quality and
                 reliable automotive services. Visit us or schedule your next
                 appointment.
               </p>
@@ -498,64 +436,15 @@ export function CarRepairLanding() {
         </div>
       </section>
 
-      {/* Latest News Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Latest News & Tips
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Top Maintenance Tips to Extend Your Car’s Life",
-                description:
-                  "Discover essential car maintenance practices to help you avoid costly repairs and keep your vehicle in top shape.",
-                image: "/hero image.png",
-              },
-              {
-                title: "5 Signs It’s Time for a Brake Check",
-                description:
-                  "Learn how to spot early warning signs of brake wear and avoid safety issues on the road.",
-                image: "/hero image.png",
-              },
-              {
-                title: "Preparing Your Car for Winter: A Complete Guide",
-                description:
-                  "Get your vehicle winter-ready with our comprehensive guide, from tire care to antifreeze checks.",
-                image: "/hero image.png",
-              },
-            ].map((post, index) => (
-              <Link key={index} href="#" className="group">
-                <Card>
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    width={400}
-                    height={200}
-                    className="w-full"
-                  />
-                  <CardContent className="p-4">
-                    <h3 className="font-semibold group-hover:text-yellow-400">
-                      {post.title}
-                    </h3>
-                    <p className="text-sm text-neutral-500 mt-2 dark:text-neutral-400">
-                      {post.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             {/* About Section */}
             <div>
-              <h3 className="text-white font-bold mb-4">Gord's Auto Repair</h3>
+              <h3 className="text-white font-bold mb-4">
+                Gord&apos;s Auto Repair
+              </h3>
               <p className="text-sm">
                 Your trusted local auto repair shop, committed to delivering
                 reliable and high-quality car maintenance services.
@@ -627,8 +516,8 @@ export function CarRepairLanding() {
           {/* Footer Bottom */}
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
             <p>
-              &copy; {new Date().getFullYear()} Gord's Auto Repair. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} Gord&apos;s Auto Repair. All
+              rights reserved.
             </p>
           </div>
         </div>
