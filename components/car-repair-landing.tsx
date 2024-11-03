@@ -59,10 +59,12 @@ export function CarRepairLanding() {
             </span>
           </a>
           <div className="flex md:order-2 items-center gap-x-2 rtl:space-x-reverse">
-            <Phone className="w-5 h-5 text-yellow-400" />
-            <span className="text-sm font-medium text-yellow-400">
-              604-875-1525
-            </span>
+            <a href="tel:604-875-1525" className="flex items-center gap-2">
+              <Phone className="w-5 h-5 text-yellow-400" />
+              <span className="text-sm font-medium text-yellow-400">
+                604-875-1525
+              </span>
+            </a>
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -132,7 +134,6 @@ export function CarRepairLanding() {
           </div>
         </div>
       </nav>
-
       {/* Hero Section */}
       <section
         id="home"
@@ -169,7 +170,6 @@ export function CarRepairLanding() {
           </div>
         </div>
       </section>
-
       {/* Experience Section */}
       <section id="about" className="py-16 container mx-auto px-4 pt-20 pb-20">
         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -209,7 +209,6 @@ export function CarRepairLanding() {
           </div>
         </div>
       </section>
-
       {/* Services Section */}
       <section id="services" className="py-16 bg-gray-50 pt-20">
         <div className="container mx-auto px-4">
@@ -281,7 +280,6 @@ export function CarRepairLanding() {
           </div>
         </div>
       </section>
-
       {/* Team Section */}
       <section id="team" className="py-16">
         <div className="container mx-auto px-4">
@@ -313,7 +311,6 @@ export function CarRepairLanding() {
           </div>
         </div>
       </section>
-
       {/* Testimonials Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -352,7 +349,7 @@ export function CarRepairLanding() {
                       alt={`Client ${testimonial.name}`}
                       width={50}
                       height={50}
-                      className="rounded-full object-cover"
+                      className="w-12 h-12 rounded-full object-cover"
                     />
                     <div>
                       <h3 className="font-semibold">{testimonial.name}</h3>
@@ -372,7 +369,6 @@ export function CarRepairLanding() {
           </div>
         </div>
       </section>
-
       {/* Appointment Form */}
       <section id="contact" className="py-16 bg-gray-900 text-white pt-20">
         <div className="container mx-auto px-4">
@@ -400,12 +396,17 @@ export function CarRepairLanding() {
                   <span>Saturday & Sunday: Closed</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone className="w-5 h-5 text-yellow-400" />
-                  <span>604-875-1525</span>
+                  <a
+                    href="tel:604-875-1525"
+                    className="flex items-center gap-2"
+                  >
+                    <Phone className="w-5 h-5 text-yellow-400" />
+                    <span>604-875-1525</span>
+                  </a>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-5 h-5 text-yellow-400" />
-                  <span>hello@gordsauto.ca</span>
+                  <a href="mailto:hello@gordsauto.ca">hello@gordsauto.ca</a>
                 </div>
               </div>
             </div>
@@ -432,6 +433,57 @@ export function CarRepairLanding() {
                 Submit
               </Button>
             </form>
+          </div>
+        </div>
+      </section>
+
+      {/* News */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Latest News & Tips
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Top Maintenance Tips to Extend Your Car’s Life",
+                description:
+                  "Discover essential car maintenance practices to help you avoid costly repairs and keep your vehicle in top shape.",
+                image: "/hero image.png",
+              },
+              {
+                title: "5 Signs It’s Time for a Brake Check",
+                description:
+                  "Learn how to spot early warning signs of brake wear and avoid safety issues on the road.",
+                image: "/hero image.png",
+              },
+              {
+                title: "Preparing Your Car for Winter: A Complete Guide",
+                description:
+                  "Get your vehicle winter-ready with our comprehensive guide, from tire care to antifreeze checks.",
+                image: "/hero image.png",
+              },
+            ].map((post, index) => (
+              <Link key={index} href="#" className="group">
+                <Card>
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    width={400}
+                    height={200}
+                    className="w-full"
+                  />
+                  <CardContent className="p-4">
+                    <h3 className="font-semibold group-hover:text-yellow-400">
+                      {post.title}
+                    </h3>
+                    <p className="text-sm text-neutral-500 mt-2 dark:text-neutral-400">
+                      {post.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -507,8 +559,13 @@ export function CarRepairLanding() {
                 <li>1520 Clark Dr, Vancouver, BC V5L 3L3</li>
                 <li>Monday—Friday: 7:30AM–5:00PM</li>
                 <li>Saturday & Sunday: Closed</li>
-                <li>Phone: 604-875-1525</li>
-                <li>Email: hello@gordsauto.ca</li>
+                <li>
+                  Phone: <a href="tel:604-875-1525">604-875-1525</a>
+                </li>
+                <li>
+                  Email:{" "}
+                  <a href="mailto:hello@gordsauto.ca">hello@gordsauto.ca</a>
+                </li>
               </ul>
             </div>
           </div>
