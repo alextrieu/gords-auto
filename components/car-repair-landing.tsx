@@ -150,7 +150,7 @@ export function CarRepairLanding() {
         <Image
           src="/car.png"
           alt="Auto repair garage"
-          layout="fill"
+          fill
           objectFit="cover"
           objectPosition="center"
           quality={100}
@@ -526,13 +526,13 @@ export function CarRepairLanding() {
                 title: "5 Signs It’s Time for a Brake Check",
                 description:
                   "Learn how to spot early warning signs of brake wear and avoid safety issues on the road.",
-                image: "/hero image.png",
+                image: "/brake.png",
               },
               {
-                title: "Preparing Your Car for Winter: A Complete Guide",
+                title: "Preparing Your Car for Winter",
                 description:
                   "Get your vehicle winter-ready with our comprehensive guide, from tire care to antifreeze checks.",
-                image: "/hero image.png",
+                image: "/tire.png",
               },
             ].map((post, index) => (
               <Link key={index} href="#" className="group">
