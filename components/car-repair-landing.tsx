@@ -154,10 +154,10 @@ export function CarRepairLanding() {
         <div className="absolute inset-0 bg-black opacity-60"></div>
         {/* Hero Section - Content */}
         <div className="relative z-10 max-w-2xl px-4 text-white">
-          <h1 className="text-3xl md:text-5xl font-extrabold mb-4">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-2 md:mb-4">
             Expert Car Care, Right When You Need It
           </h1>
-          <p className="text-lg mb-8">
+          <p className="text-base md:text-lg lg:text-xl mb-4 md:mb-8">
             At Gord&apos;s Auto Repair, we provide comprehensive car maintenance
             and repair services to keep your vehicle running smoothly and
             safely. Whether you need routine oil changes, brake service, or
@@ -166,13 +166,14 @@ export function CarRepairLanding() {
           <div className="flex space-x-4 justify-center">
             <a
               href="#contact"
-              className="px-6 py-3 bg-yellow-400 text-black rounded-lg hover:bg-yellow-500"
+              className="px-4 py-2 md:px-6 md:py-3 bg-yellow-400 text-black rounded-lg hover:bg-yellow-500 text-sm md:text-base"
             >
               Schedule an Appointment
             </a>
           </div>
         </div>
       </section>
+
       {/* Experience Section */}
       <section id="about" className="py-16 container mx-auto px-4 pt-20 pb-20">
         <div className="grid md:grid-cols-2 gap-8 items-center">
