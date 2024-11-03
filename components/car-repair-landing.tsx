@@ -46,7 +46,7 @@ export function CarRepairLanding() {
             : "bg-transparent text-white"
         }`}
       >
-        <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse flex-shrink-0"
@@ -96,11 +96,11 @@ export function CarRepairLanding() {
 
           <div
             className={`${
-              isMenuOpen ? "block bg-gray-900" : "hidden"
-            } w-full md:flex md:w-auto md:order-1`}
+              isMenuOpen ? "flex flex-col bg-gray-900" : "hidden"
+            } w-full md:flex md:w-auto md:order-1 transition-colors duration-300`}
             id="navbar-sticky"
           >
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <ul className="flex flex-col md:flex-row md:space-x-8 font-medium p-4 md:p-0 mt-4 rounded-lg md:mt-0 md:border-0 rtl:space-x-reverse">
               <li>
                 <Link
                   href="#home"
@@ -137,6 +137,7 @@ export function CarRepairLanding() {
           </div>
         </div>
       </nav>
+
       {/* Hero Section */}
       <section
         id="home"
@@ -177,27 +178,26 @@ export function CarRepairLanding() {
       {/* Experience Section */}
       <section id="about" className="py-16 container mx-auto px-4 pt-20 pb-20">
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Image
               src="/mechanic.png"
               alt="Car service"
               width={300}
               height={400}
-              className="rounded-lg"
+              className="rounded-lg w-full"
             />
             <Image
               src="/hero image.png"
               alt="Car repair"
               width={300}
               height={400}
-              className="rounded-lg"
+              className="rounded-lg hidden md:block"
             />
           </div>
           <div className="space-y-4 text-center md:text-left">
             <h2 className="text-2xl md:text-3xl font-bold">
               Precision Repairs and Quality Care
             </h2>
-
             <p className="text-neutral-500 dark:text-neutral-400">
               With years of experience and a commitment to excellence,
               Gord&apos;s Auto Repair is your go-to choice for reliable and
@@ -213,6 +213,7 @@ export function CarRepairLanding() {
           </div>
         </div>
       </section>
+
       {/* Services Section */}
       <section id="services" className="py-16 bg-gray-50 pt-20">
         <div className="container mx-auto px-4">
