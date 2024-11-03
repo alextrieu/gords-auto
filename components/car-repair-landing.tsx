@@ -331,7 +331,7 @@ export function CarRepairLanding() {
               {
                 name: "Alice T.",
                 review:
-                  "Gordss Auto Repair saved me in a pinch! They were fast, professional, and my car runs better than ever. Highly recommend!",
+                  "Gords Auto Repair saved me in a pinch! They were fast, professional, and my car runs better than ever. Highly recommend!",
                 rating: 5,
                 image: "/selfie.png",
               },
@@ -343,11 +343,11 @@ export function CarRepairLanding() {
                 image: "/selfie1.png",
               },
               {
-                name: "Emily D.",
+                name: "David J.",
                 review:
-                  "The best auto repair shop in town. I trust them with all my car needs. Their customer service and attention to detail are outstanding!",
+                  "The best auto repair shop in Vancouver. I trust them with all my car needs. Their customer service and attention to detail are outstanding!",
                 rating: 5,
-                image: "/selfie.png",
+                image: "/port.png",
               },
             ].map((testimonial, index) => (
               <Card key={index}>
