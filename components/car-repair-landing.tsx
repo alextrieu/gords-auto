@@ -51,7 +51,7 @@ export function CarRepairLanding() {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse flex-shrink-0"
           >
-            <span className="self-center text-base md:text-lg lg:text-2xl font-semibold whitespace-nowrap text-white flex items-center">
+            <span className="self-center text-sm md:text-lg lg:text-2xl font-semibold whitespace-nowrap text-white flex items-center">
               <span className="bg-red-700 text-white font-bold px-2 py-1 rounded-md mr-2">
                 GORD&apos;S
               </span>
