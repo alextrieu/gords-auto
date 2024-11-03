@@ -419,28 +419,90 @@ export function CarRepairLanding() {
                 </div>
               </div>
             </div>
-            <form className="space-y-4">
-              <Input
-                placeholder="Name"
-                className="bg-gray-800 border-gray-700"
-              />
-              <Input
-                placeholder="Email"
-                type="email"
-                className="bg-gray-800 border-gray-700"
-              />
-              <Input
-                placeholder="Phone"
-                type="tel"
-                className="bg-gray-800 border-gray-700"
-              />
-              <Textarea
-                placeholder="Message"
-                className="bg-gray-800 border-gray-700"
-              />
-              <Button className="w-full bg-yellow-400 text-black hover:bg-yellow-500">
+            <form
+              action="https://public.herotofu.com/v1/719efb00-e0b9-11ee-8980-3397320e035b"
+              method="post"
+              acceptCharset="UTF-8"
+              className="space-y-4"
+            >
+              <div>
+                <label htmlFor="name" className="text-gray-400">
+                  Your Name
+                </label>
+                <Input
+                  name="Name"
+                  id="name"
+                  type="text"
+                  placeholder="Name"
+                  required
+                  className="bg-gray-800 border-gray-700 mt-1"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="phone" className="text-gray-400">
+                  Your Phone
+                </label>
+                <Input
+                  name="Phone"
+                  id="phone"
+                  type="tel"
+                  placeholder="Phone"
+                  required
+                  className="bg-gray-800 border-gray-700 mt-1"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="text-gray-400">
+                  Your Email
+                </label>
+                <Input
+                  name="Email"
+                  id="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                  className="bg-gray-800 border-gray-700 mt-1"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="message" className="text-gray-400">
+                  Message
+                </label>
+                <Textarea
+                  name="Message"
+                  id="message"
+                  placeholder="Message"
+                  className="bg-gray-800 border-gray-700 mt-1"
+                />
+              </div>
+
+              <Button
+                type="submit"
+                className="w-full bg-yellow-400 text-black hover:bg-yellow-500"
+              >
                 Submit
               </Button>
+
+              {/* Hidden anti-spam field */}
+              <div
+                style={{
+                  textIndent: "-99999px",
+                  whiteSpace: "nowrap",
+                  overflow: "hidden",
+                  position: "absolute",
+                }}
+                aria-hidden="true"
+              >
+                <input
+                  type="text"
+                  name="_gotcha"
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
             </form>
           </div>
         </div>
