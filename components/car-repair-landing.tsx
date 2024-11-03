@@ -46,12 +46,12 @@ export function CarRepairLanding() {
             : "bg-transparent text-white"
         }`}
       >
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
           <a
             href="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
+            className="flex items-center space-x-3 rtl:space-x-reverse flex-shrink-0"
           >
-            <span className="self-center lg:text-2xl font-semibold whitespace-nowrap text-white flex items-center">
+            <span className="self-center text-base md:text-lg lg:text-2xl font-semibold whitespace-nowrap text-white flex items-center">
               <span className="bg-red-700 text-white font-bold px-2 py-1 rounded-md mr-2">
                 GORD&apos;S
               </span>
@@ -59,7 +59,10 @@ export function CarRepairLanding() {
             </span>
           </a>
           <div className="flex md:order-2 items-center gap-x-2 rtl:space-x-reverse">
-            <a href="tel:604-875-1525" className="flex items-center gap-2">
+            <a
+              href="tel:604-875-1525"
+              className="flex items-center gap-2 flex-shrink-0"
+            >
               <Phone className="w-5 h-5 text-yellow-400" />
               <span className="text-sm font-medium text-yellow-400">
                 604-875-1525
@@ -322,7 +325,7 @@ export function CarRepairLanding() {
               {
                 name: "Alice T.",
                 review:
-                  "Gord&apos;s Auto Repair saved me in a pinch! They were fast, professional, and my car runs better than ever. Highly recommend!",
+                  "Gordss Auto Repair saved me in a pinch! They were fast, professional, and my car runs better than ever. Highly recommend!",
                 rating: 5,
                 image: "/selfie.png",
               },
