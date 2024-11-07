@@ -304,7 +304,6 @@ export function CarRepairLanding() {
             {[
               { id: 1, name: "Harvey", title: "Senior Mechanic" },
               { id: 2, name: "John", title: "Senior Mechanic" },
-              { id: 3, name: "Mike", title: "Senior Mechanic" },
             ].map((member) => (
               <Card key={member.id}>
                 <CardContent className="p-4 text-center">
@@ -420,7 +419,7 @@ export function CarRepairLanding() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-5 h-5 text-yellow-400" />
-                  <a href="mailto:hello@gordsauto.ca">hello@gordsauto.ca</a>
+                  <a href="mailto:john@gordsauto.ca">john@gordsauto.ca</a>
                 </div>
               </div>
             </div>
@@ -655,7 +654,7 @@ export function CarRepairLanding() {
                 </li>
                 <li>
                   Email:{" "}
-                  <a href="mailto:hello@gordsauto.ca">hello@gordsauto.ca</a>
+                  <a href="mailto:john@gordsauto.ca">john@gordsauto.ca</a>
                 </li>
               </ul>
             </div>
