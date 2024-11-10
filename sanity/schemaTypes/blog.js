@@ -34,6 +34,10 @@ export default {
       of: [
         {
           type: "block",
+          lists: [
+            { title: "Bullet", value: "bullet" },
+            { title: "Numbered", value: "number" },
+          ],
         },
       ],
     },
