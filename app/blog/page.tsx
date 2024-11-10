@@ -31,14 +31,16 @@ export default function Blog() {
   return (
     <div>
       <h1>Blog Posts</h1>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <h2>{post.title}</h2>
-            <p>{post.smallDescription}</p>
-          </li>
-        ))}
-      </ul>
+      {posts && (
+        <ul>
+          {posts.map((post) => (
+            <li key={post.slug}>
+              <h2>{post.title}</h2>
+              <p>{post.smallDescription}</p>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
