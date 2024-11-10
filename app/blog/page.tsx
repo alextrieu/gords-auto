@@ -4,6 +4,7 @@ import Link from "next/link";
 import { client } from "../../sanity/lib/client";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import { PortableTextBlock } from "next-sanity";
 
 type Post = {
   title: string;
@@ -12,6 +13,7 @@ type Post = {
   imageUrl?: string;
   authorName: string;
   publishedDate: string;
+  content: PortableTextBlock[];
 };
 
 export default function Blog() {
@@ -24,6 +26,7 @@ export default function Blog() {
       "slug": slug.current,
       smallDescription,
       "imageUrl": titleImage.asset->url,
+      content,
       authorName,
       publishedDate
     }`;
@@ -34,6 +37,8 @@ export default function Blog() {
       .then((data) => setPosts(data))
       .catch(console.error);
   }, []);
+
+  console.log(posts);
 
   return (
     <div className="flex flex-col min-h-screen">
