@@ -20,9 +20,9 @@ import {
   Mail,
 } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import BlogPosts from "./blog-posts";
 import Navigation from "./navigation";
+import Footer from "./footer";
 
 export function CarRepairLanding() {
   return (
@@ -405,111 +405,7 @@ export function CarRepairLanding() {
       <BlogPosts />
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            {/* About Section */}
-            <div>
-              <h3 className="text-white font-bold mb-4">
-                Gord&apos;s Auto Repair
-              </h3>
-              <p className="text-sm">
-                Your trusted local auto repair shop, committed to delivering
-                reliable and high-quality car maintenance services.
-              </p>
-            </div>
-
-            {/* Company Links */}
-            <div>
-              <h3 className="text-white font-bold mb-4">Company Links</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="#about" className="hover:text-white">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#services" className="hover:text-white">
-                    Our Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#contact" className="hover:text-white">
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Services Links */}
-            <div>
-              <h3 className="text-white font-bold mb-4">Services</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="#services" className="hover:text-white">
-                    General Inspections & Diagnostics
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#services" className="hover:text-white">
-                    Routine Maintenance
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#services" className="hover:text-white">
-                    Tire & Wheel Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#services" className="hover:text-white">
-                    Engine & Transmission
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#services" className="hover:text-white">
-                    Electrical & A/C Repair
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#services" className="hover:text-white">
-                    Brake Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#services" className="hover:text-white">
-                    Glass Repair
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact Info */}
-            <div>
-              <h3 className="text-white font-bold mb-4">Contact Us</h3>
-              <ul className="space-y-2 text-sm">
-                <li>1520 Clark Dr, Vancouver, BC V5L 3L3</li>
-                <li>Monday—Friday: 7:30AM–5:00PM</li>
-                <li>Saturday & Sunday: Closed</li>
-                <li>
-                  Phone: <a href="tel:604-875-1525">604-875-1525</a>
-                </li>
-                <li>
-                  Email:{" "}
-                  <a href="mailto:john@gordsauto.ca">john@gordsauto.ca</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Footer Bottom */}
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
-            <p>
-              &copy; {new Date().getFullYear()} Gord&apos;s Auto Repair. All
-              rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

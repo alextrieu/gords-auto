@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { client } from "../../sanity/lib/client";
 import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 
 type Post = {
   title: string;
@@ -36,8 +37,8 @@ export default function Blog() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navigation />
-      <section className="bg-gray-900 dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-28 lg:px-6">
+      <section className="bg-gray-900 dark:bg-gray-900 border-b border-gray-800 ">
+        <div className="py-16 px-4 mx-auto max-w-screen-xl lg:py-28 lg:px-6">
           <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
             <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">
               Our Blog
@@ -105,6 +106,8 @@ export default function Blog() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }
