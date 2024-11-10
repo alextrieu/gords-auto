@@ -4,6 +4,7 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { notFound } from "next/navigation";
 import { PortableText } from "next-sanity";
+import { PortableTextBlock } from "next-sanity";
 
 type Post = {
   title: string;
@@ -12,7 +13,7 @@ type Post = {
   imageUrl?: string;
   authorName: string;
   publishedDate: string;
-  content: any;
+  content: PortableTextBlock[];
 };
 
 async function fetchBlogPost(slug: string): Promise<Post | null> {
