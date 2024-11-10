@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import BlogPosts from "./blog-posts";
 
 export function CarRepairLanding() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -512,55 +513,7 @@ export function CarRepairLanding() {
       </section>
 
       {/* News */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Latest News & Tips
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Top Maintenance Tips to Extend Your Car’s Life",
-                description:
-                  "Discover essential car maintenance practices to help you avoid costly repairs and keep your vehicle in top shape.",
-                image: "/hero image.png",
-              },
-              {
-                title: "5 Signs It’s Time for a Brake Check",
-                description:
-                  "Learn how to spot early warning signs of brake wear and avoid safety issues on the road.",
-                image: "/brake.png",
-              },
-              {
-                title: "Preparing Your Car for Winter",
-                description:
-                  "Get your vehicle winter-ready with our comprehensive guide, from tire care to antifreeze checks.",
-                image: "/tire.png",
-              },
-            ].map((post, index) => (
-              <Link key={index} href="#" className="group">
-                <Card>
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    width={400}
-                    height={200}
-                    className="w-full"
-                  />
-                  <CardContent className="p-4">
-                    <h3 className="font-semibold group-hover:text-yellow-400">
-                      {post.title}
-                    </h3>
-                    <p className="text-sm text-neutral-500 mt-2 dark:text-neutral-400">
-                      {post.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <BlogPosts />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-12">
