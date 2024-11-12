@@ -21,6 +21,7 @@ export type Post = {
   header: string;
   description: string;
   longDescription: string;
+  image: string;
 };
 
 // Define the services data
@@ -37,12 +38,14 @@ export const servicesData: Post[] = [
     We offer specialized services like pre-purchase inspections for used vehicles, annual safety checks to meet regulatory standards, and multi-point inspections tailored to your vehicle's needs. With our diagnostics, we identify underlying issues before they become costly repairs, saving you time and money in the long run.
 
     Whether you’re facing a warning light or just want peace of mind, our team is dedicated to keeping your vehicle safe, reliable, and road-ready.`,
+    image: "/inspection.png",
   },
   {
     icon: Droplet,
     title: "Lube, Oil & Filter",
     slug: "lube-oil-filter",
     header: "Routine Lube, Oil & Filter Services for Optimal Engine Health",
+    image: "/oil.png",
     description:
       "Routine oil changes, lube, and filter replacements to keep your engine running smoothly.",
     longDescription: `Regular oil changes are the cornerstone of a healthy engine. Our Lube, Oil & Filter service is meticulously designed to enhance your vehicle’s performance and longevity. We use top-quality oils and premium filters to match your vehicle’s specifications, providing optimal lubrication to all moving parts and reducing engine wear.
@@ -56,6 +59,7 @@ export const servicesData: Post[] = [
     title: "Tire & Wheel Services",
     slug: "tire-wheel-services",
     header: "Professional Tire & Wheel Services for a Safe, Smooth Ride",
+    image: "/tire swap.png",
     description:
       "Complete tire and wheel services, including alignment, suspension, rotation, and balancing for safe and smooth driving.",
     longDescription: `Our Tire & Wheel Services are designed to provide you with a balanced, comfortable, and safe driving experience. Proper tire and wheel maintenance not only enhances driving comfort but also extends the life of your tires, improves fuel efficiency, and promotes even tire wear.
@@ -70,6 +74,7 @@ export const servicesData: Post[] = [
     slug: "engine-transmission",
     header:
       "Engine & Transmission Services to Maximize Performance and Longevity",
+    image: "/engine.png",
     description:
       "Expert engine repair and transmission service, ensuring optimal performance and longevity of your vehicle.",
     longDescription: `The engine and transmission are the powerhouses of your vehicle, and our services are dedicated to keeping them operating at their best. We offer comprehensive diagnostics, repairs, and preventive maintenance services that cover everything from routine tune-ups to complex repairs.
@@ -83,6 +88,7 @@ export const servicesData: Post[] = [
     title: "Electrical Systems",
     slug: "electrical-systems",
     header: "Complete Electrical System Diagnostics and Repairs",
+    image: "/electrical.png",
     description:
       "Full-service electrical diagnostics and repairs for all your vehicle’s electrical needs.",
     longDescription: `Today’s vehicles rely heavily on complex electrical systems, and our services are designed to keep these systems functioning perfectly. We provide everything from battery testing and replacement to intricate wiring repairs, ensuring that all electrical components are in top working order.
@@ -96,6 +102,7 @@ export const servicesData: Post[] = [
     title: "Air Conditioning Services",
     slug: "air-conditioning-services",
     header: "Reliable Air Conditioning Services for Comfortable Driving",
+    image: "/ac.png",
     description:
       "Air conditioning system diagnostics, repair, and maintenance to keep you cool.",
     longDescription: `Stay cool in hot weather with our comprehensive air conditioning services. We provide in-depth diagnostics, leak detection, and refrigerant recharges to ensure your AC system performs optimally.
@@ -109,6 +116,7 @@ export const servicesData: Post[] = [
     title: "Brake Services",
     slug: "brake-services",
     header: "Trusted Brake Services for Safe, Reliable Stopping Power",
+    image: "/brake.png",
     description:
       "Complete brake services, from pad replacements to full brake system diagnostics and repair.",
     longDescription: `Brakes are one of the most critical safety features in any vehicle, and our brake services ensure they function reliably every time you hit the road. We handle everything from brake pad replacements to rotor resurfacing, caliper repairs, and brake fluid changes.
@@ -122,6 +130,7 @@ export const servicesData: Post[] = [
     title: "Glass Repair & Replacement",
     slug: "glass-repair-replacement",
     header: "Glass Repair & Replacement Services for Clear, Safe Visibility",
+    image: "/glass repair.png",
     description:
       "Windshield and glass repair or replacement to keep your view clear and safe.",
     longDescription: `Your windshield and windows are essential for both visibility and structural integrity. Our glass repair and replacement services ensure that even minor chips or cracks don’t compromise your safety.
