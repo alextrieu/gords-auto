@@ -26,17 +26,17 @@ export default function Footer() {
             <h3 className="text-white font-bold mb-4">Company Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#about" className="hover:text-white">
+                <Link href="/about-us" className="hover:text-white">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="hover:text-white">
+                <Link href="/our-services" className="hover:text-white">
                   Our Services
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-white">
+                <Link href="/#contact" className="hover:text-white">
                   Contact Us
                 </Link>
               </li>
