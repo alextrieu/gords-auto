@@ -87,14 +87,11 @@ export function CarRepairLanding() {
               technology to diagnose and fix issues accurately and efficiently,
               helping you get back on the road with confidence.
             </p>
-            <Button
-              className="bg-yellow-400 text-black hover:bg-yellow-500 mx-auto md:mx-0"
-              onClick={() => {
-                window.location.href = "#services";
-              }}
-            >
-              Learn More
-            </Button>
+            <Link href="/about-us" passHref>
+              <Button className="bg-yellow-400 text-black hover:bg-yellow-500 mt-4 mx-auto md:mx-0">
+                Learn More
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

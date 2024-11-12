@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { servicesData } from "@/app/data/servicesData";
 
 export default function Footer() {
   return (
@@ -46,41 +47,16 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold mb-4">Services</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="#services" className="hover:text-white">
-                  General Inspections & Diagnostics
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="hover:text-white">
-                  Routine Maintenance
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="hover:text-white">
-                  Tire & Wheel Services
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="hover:text-white">
-                  Engine & Transmission
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="hover:text-white">
-                  Electrical & A/C Repair
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="hover:text-white">
-                  Brake Services
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="hover:text-white">
-                  Glass Repair
-                </Link>
-              </li>
+              {servicesData.map((service) => (
+                <li key={service.slug}>
+                  <Link
+                    href={`/our-services/${service.slug}`}
+                    className="hover:text-white"
+                  >
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

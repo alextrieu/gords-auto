@@ -79,7 +79,7 @@ export default function Navigation() {
           <ul className="flex flex-col md:flex-row md:space-x-8 font-medium md:p-0 mt-4 rounded-lg md:mt-0 md:border-0 rtl:space-x-reverse">
             <li>
               <Link
-                href="#home"
+                href="/"
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-2 md:px-3 text-yellow-400 md:p-0 hover:text-white"
               >
@@ -88,7 +88,7 @@ export default function Navigation() {
             </li>
             <li>
               <Link
-                href="#about"
+                href="/about-us"
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-2 md:px-3 text-white md:p-0 hover:text-gray-300"
               >
@@ -97,7 +97,7 @@ export default function Navigation() {
             </li>
             <li>
               <Link
-                href="#services"
+                href="/our-services"
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-2 md:px-3 text-white md:p-0 hover:text-gray-300"
               >
@@ -106,7 +106,7 @@ export default function Navigation() {
             </li>
             <li>
               <Link
-                href="#contact"
+                href="/#contact"
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-2 md:px-3 text-white md:p-0 hover:text-gray-300"
               >
