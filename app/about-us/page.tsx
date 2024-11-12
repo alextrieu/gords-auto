@@ -19,9 +19,10 @@ export default function AboutUs() {
           <p>
             At Gord's Auto, we believe that quality, honesty, and customer
             satisfaction are the keys to lasting relationships. With years of
-            experience in the automotive industry, we’ve built our reputation on
-            providing reliable and thorough service, making sure every vehicle
-            that leaves our shop is safe, efficient, and road-ready.
+            experience in the automotive industry, We&apos;ve built our
+            reputation on providing reliable and thorough service, making sure
+            every vehicle that leaves our shop is safe, efficient, and
+            road-ready.
           </p>
           <p>
             Our team is dedicated to offering a full range of services, from
