@@ -12,8 +12,11 @@ export default function Footer() {
               Gord&apos;s Auto Repair
             </h3>
             <p className="text-sm">
-              Your trusted local auto repair shop, committed to delivering
-              reliable and high-quality car maintenance services.
+              Your trusted local auto repair shop, dedicated to providing
+              dependable and high-quality car maintenance and repair services.
+              From routine checkups to complex repairs, our skilled team is here
+              to keep your vehicle running smoothly, safely, and efficiently on
+              the road.
             </p>
           </div>
 
