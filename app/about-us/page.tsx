@@ -13,11 +13,11 @@ export default function AboutUs() {
         <section className="text-lg leading-relaxed space-y-6">
           <p>
             <strong>
-              Welcome to Gord's Auto, Your Trusted Partner in Auto Care
+              Welcome to Gord&apos;s Auto, Your Trusted Partner in Auto Care
             </strong>
           </p>
           <p>
-            At Gord's Auto, we believe that quality, honesty, and customer
+            At Gord&apos;s Auto, we believe that quality, honesty, and customer
             satisfaction are the keys to lasting relationships. With years of
             experience in the automotive industry, We&apos;ve built our
             reputation on providing reliable and thorough service, making sure
@@ -29,13 +29,14 @@ export default function AboutUs() {
             routine maintenance like oil changes and tire rotations to advanced
             diagnostics and repairs. We use the latest technology and tools to
             ensure accurate assessments and effective solutions, all while
-            delivering a transparent and honest approach. We’ll always take the
-            time to explain what’s going on with your vehicle and discuss the
-            options that make the most sense for your needs and budget.
+            delivering a transparent and honest approach. We&apos;ll always take
+            the time to explain what&apos;s going on with your vehicle and
+            discuss the options that make the most sense for your needs and
+            budget.
           </p>
 
           <h2 className="text-2xl font-semibold mt-8">
-            Why Choose Gord's Auto?
+            Why Choose Gord&apos;s Auto?
           </h2>
           <ul className="list-disc list-inside space-y-2">
             <li>
@@ -52,7 +53,7 @@ export default function AboutUs() {
               it were our own.
             </li>
             <li>
-              <strong>Community Focus:</strong> As a local business, we’re
+              <strong>Community Focus:</strong> As a local business, we&apos;re
               committed to supporting our community and earning your trust with
               every visit.
             </li>
@@ -60,9 +61,10 @@ export default function AboutUs() {
 
           <p>
             Whether you need a quick inspection, scheduled maintenance, or
-            complex repairs, Gord's Auto is here to help. Our goal is to keep
-            you on the road safely and confidently. Thank you for trusting us
-            with your vehicle—we look forward to serving you for years to come!
+            complex repairs, Gord&apos;s Auto is here to help. Our goal is to
+            keep you on the road safely and confidently. Thank you for trusting
+            us with your vehicle—we look forward to serving you for years to
+            come!
           </p>
         </section>
       </main>
