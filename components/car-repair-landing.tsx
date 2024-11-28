@@ -123,22 +123,44 @@ export function CarRepairLanding() {
           <h2 className="text-xl md:text-3xl font-bold text-center mb-12">
             Your Trusted Technician Experts{" "}
           </h2>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 gap-2 sm:gap-4 lg:gap-6">
             {[
-              { id: 1, name: "Harvey", title: "Senior Mechanic" },
-              { id: 2, name: "John", title: "Senior Mechanic" },
+              {
+                id: 1,
+                name: "Harvey",
+                title: "Senior Mechanic",
+                position: "top",
+              },
+              {
+                id: 2,
+                name: "John",
+                title: "Senior Mechanic",
+                position: "top",
+              },
+              { id: 3, name: "Harvey", title: "Mechanic", position: "center" },
+              { id: 4, name: "AJ", title: "Mechanic", position: "center" },
+              { id: 5, name: "Harvey", title: "Mechanic", position: "center" },
+              { id: 6, name: "RJ", title: "Mechanic", position: "center" },
             ].map((member) => (
               <Card key={member.id}>
-                <CardContent className="p-4 text-center">
-                  <Image
-                    src={`/${member.id}.jpeg`}
-                    alt={`Team member ${member.name}`}
-                    width={200}
-                    height={200}
-                    className="rounded-full mx-auto mb-4"
-                  />
-                  <h3 className="font-semibold">{member.name}</h3>
-                  <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                <CardContent className="p-2 sm:p-4 text-center">
+                  <div className="relative aspect-square w-full max-w-[200px] mx-auto mb-2 sm:mb-4">
+                    <Image
+                      src={`/${member.id}.jpg`}
+                      alt={`Team member ${member.name}`}
+                      fill
+                      className={`rounded-full object-cover ${
+                        member.position === "top"
+                          ? "object-top"
+                          : "object-center"
+                      }`}
+                      sizes="(max-width: 640px) 33vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <h3 className="font-semibold text-sm sm:text-base">
+                    {member.name}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">
                     {member.title}
                   </p>
                 </CardContent>
