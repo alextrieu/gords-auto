@@ -126,14 +126,14 @@ export function CarRepairLanding() {
           <div className="grid grid-cols-3 gap-2 sm:gap-4 lg:gap-6">
             {[
               {
-                id: 1,
-                name: "Harvey",
+                id: 2,
+                name: "John",
                 title: "Senior Mechanic",
                 position: "top",
               },
               {
-                id: 2,
-                name: "John",
+                id: 1,
+                name: "Harvey",
                 title: "Senior Mechanic",
                 position: "top",
               },
