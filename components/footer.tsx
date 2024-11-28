@@ -71,7 +71,8 @@ export default function Footer() {
                 Phone: <a href="tel:604-875-1525">604-875-1525</a>
               </li>
               <li>
-                Email: <a href="mailto:john@gordsauto.ca">john@gordsauto.ca</a>
+                Email:{" "}
+                <a href="mailto:hello@gordsauto.ca">hello@gordsauto.ca</a>
               </li>
             </ul>
           </div>

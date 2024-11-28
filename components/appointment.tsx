@@ -37,7 +37,7 @@ export default function Appointment() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-yellow-400" />
-                <a href="mailto:john@gordsauto.ca">john@gordsauto.ca</a>
+                <a href="mailto:hello@gordsauto.ca">hello@gordsauto.ca</a>
               </div>
             </div>
           </div>
