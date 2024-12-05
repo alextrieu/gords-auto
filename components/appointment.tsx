@@ -42,7 +42,7 @@ export default function Appointment() {
             </div>
           </div>
           <form
-            action="https://public.herotofu.com/v1/719efb00-e0b9-11ee-8980-3397320e035b"
+            action="https://public.herotofu.com/v1/f389cfc0-b352-11ef-9735-732801d10107"
             method="post"
             acceptCharset="UTF-8"
             className="space-y-4"
