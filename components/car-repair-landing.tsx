@@ -138,8 +138,8 @@ export function CarRepairLanding() {
                 position: "top",
               },
               { id: 3, name: "Nick", title: "Mechanic", position: "center" },
-              { id: 4, name: "Bashdar", title: "Mechanic", position: "center" },
-              { id: 5, name: "Kyle", title: "Mechanic", position: "center" },
+              { id: 4, name: "AJ", title: "Mechanic", position: "center" },
+              { id: 5, name: "Bashder", title: "Mechanic", position: "center" },
               { id: 6, name: "RJ", title: "Mechanic", position: "center" },
             ].map((member) => (
               <Card key={member.id}>
